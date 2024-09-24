@@ -23,6 +23,14 @@
 
 </head>
 <style>
+    section {
+        padding: 10px;
+    }
+
+    .row {
+        --bs-gutter-x: auto;
+    }
+
     * {
         margin: 0;
         padding: 0;
@@ -35,7 +43,8 @@
     }
 
     body {
-        min-width: 400px;
+        /* min-width: 400px;*/
+        min-width: 320px;
         font-family: 'Montserrat', sans-serif;
     }
 
@@ -227,10 +236,7 @@
         font-size: 18px;
     }
 
-    /* Features */
-    .features {
-        flex-wrap: wrap;
-    }
+
 
     .feature-box {
         width: 390px;
@@ -339,8 +345,30 @@
 
     /*--------------------------------------------------------*/
     @media (max-width: 768px) {
+        .feature-box{
+            line-height: 26px !important;
+            font-size: 15px !important;
+        }
+        .background-text {
+        font-size: 24px !important;
+        }
+        .boton-palpitante{
+            padding: 10px 10px !important;   
+        }
+        .boton-flotante {
+            font-size: 13px !important;
+        }
+
+        .whatsapp-link {
+            font-size: 13px !important;
+        }
+
         .title-text {
             text-align: center !important;
+        }
+
+        .title {
+            font-size: 30px !important;
         }
 
         .hero-content {
@@ -362,15 +390,15 @@
         }
 
         .highlight-text {
-            font-size: 32px !important;
+            font-size: 25px !important;
         }
 
         .text-content h1 {
-            font-size: 53px !important;
+            font-size: 50px !important;
         }
 
         .subtext {
-            font-size: 23px !important;
+            font-size: 20px !important;
         }
 
         /*-----------*/
@@ -388,7 +416,7 @@
         }
 
         .description-text {
-            text-align: center;
+            text-align: justify;
         }
 
         .slider-box {
@@ -412,7 +440,8 @@
 
         /*modal*/
         .modal-content {
-            width: 90% !important;
+            width: 97% !important;
+            padding: 7px !important;
         }
 
         .modal-content h2 {
@@ -422,10 +451,23 @@
         .modal-body {
             padding: 10px !important;
         }
+        .text-banner-magenta{
+        }
+        .text-banner-magenta span{
+            font-size: 29px !important;
+        }
 
     }
 
     @media (max-width:1015px) {
+        .boton-flotante {
+            width: 260px !important;
+        }
+
+        /* Features */
+        .features {
+            flex-wrap: wrap;
+        }
 
         .banner-panel {
             display: none;
@@ -459,7 +501,7 @@
         }
 
         .panel-img {
-
+            width: 400px;
             display: block !important;
         }
 
@@ -470,7 +512,7 @@
 
     /*Testimonios*/
     .testimonial-header {
-        font-size: 2.5rem;
+        font-size: 20px;
 
         color: #333;
         margin-bottom: 10px;
@@ -547,7 +589,10 @@
         padding: 15px;
     }
 
-    .carousel-item .row {}
+    .carousel-item .row {
+        justify-content: center;
+        gap: 20px;
+    }
 
     /* Estilos de navegación del carrusel */
     .carousel-control-prev-icon,
@@ -811,7 +856,7 @@
         bottom: 20px;
         right: 20px;
         z-index: 1000;
-
+        font-size: 18px;
 
 
         display: flex;
@@ -864,7 +909,7 @@
     <div class="boton-flotante">
         <a href="https://wa.link/o5r2kf" style=""
             class="cbutton-Y-8hJvC6Vy buttonElevate btnshadow custom btn-vp btn-hp borderFull radius20 none text-center boton-palpitante">
-            <span style="font-size: 18px; font-weight: 700;">Contáctanos: +51 981 230 444</span>
+            <span style=" font-weight: 700;">Contáctanos: +51 981 230 444</span>
             <span>Obtén una cotización Express</span>
         </a>
     </div>
@@ -888,11 +933,11 @@
 
     <section class="info-section">
         <section class="info-links">
-            <button class="info-link btn-red openModalBtn" >
+            <button class="info-link btn-red openModalBtn">
                 <p>Quiero Energía Solar en Casa</p>
                 <span>Obtén la independencia energética</span>
             </button>
-            <button class="info-link btn-red openModalBtn" >
+            <button class="info-link btn-red openModalBtn">
                 <p>Quiero Energía Solar en mi Empresa</p>
                 <span>Optimiza los recursos corporativos</span>
             </button>
@@ -922,6 +967,8 @@
             min-height: 79vh;
             background: url(https://assets.cdn.filesafe.space/ySliQyFXiBChjCSwZyR4/media/65e8cf85a73c3c05680f0583.webp) no-repeat;">
     </div>
+
+
     <section
         style="display: flex;justify-content: center;flex-direction: column;align-items: center;gap: 30px;margin-top: 70px;margin-bottom:30px;">
         <section class="stats-section row">
@@ -970,6 +1017,8 @@
 
     </section>
 
+
+
     <div class="background-section">
         <div class="container">
             <p class="background-text" style="">Proyecto Solar Fotovoltaico Colegio | "Sagrado Corazón" | Trujillo</p>
@@ -992,10 +1041,10 @@
                         créditos o compensaciones. Este enfoque no solo reduce significativamente los costos operativos
                         por consumo eléctrico, sino que también promueve un balance energético favorable, demostrando tu
                         compromiso con la sostenibilidad y la innovación energética.</p>
-                    <div class="col-lg-6 col-md-8 col-sm-6 btn_mas">
-                        <a class="btn-red openModalBtn" 
+                    <div class="col-lg-6 col-md-8 col-sm-6 col-10">
+                        <a class="btn-red openModalBtn"
                             style="text-decoration: none; color: white; background: #E94E35; display: flex; justify-content: center; flex-direction: column; align-items: center; border-radius: 20px; padding: 15px;">
-                            <span style="font-size: 20px; font-weight: bold;">Recibe más información</span>
+                            <span style="font-size: 17px; font-weight: bold;">Recibe más información</span>
                             <span style="font-size: 15px;">Empresas Sostenibles</span>
                         </a>
                     </div>
@@ -1093,10 +1142,10 @@
                             ideales para áreas propensas a cortes, ofreciendo autonomía de fuentes
                             convencionales.</span>
                     </div>
-                    <div class="col-lg-6 col-md-8 col-sm-6">
-                        <a class="btn-red openModalBtn" 
+                    <div class="col-lg-6 col-md-8 col-sm-6 col-10">
+                        <a class="btn-red openModalBtn"
                             style="text-decoration: none; color: white; background: #E94E35; display: flex; justify-content: center; flex-direction: column; align-items: center; border-radius: 20px; padding: 15px;">
-                            <span style="font-size: 20px; font-weight: bold;">Conoce más</span>
+                            <span style="font-size: 17px; font-weight: bold;">Conoce más</span>
                             <span style="font-size: 15px;">Hogares sin ataduras</span>
                         </a>
                     </div>
@@ -1134,10 +1183,10 @@
                         autonomía y resistencia, reduciendo la dependencia de fuentes de energía convencionales.
 
                     </p>
-                    <div class="col-lg-6 col-md-8 col-sm-6">
-                        <a class="btn-red openModalBtn" 
+                    <div class="col-lg-6 col-md-8 col-sm-6 col-10">
+                        <a class="btn-red openModalBtn"
                             style="text-decoration: none; color: white; background: #E94E35; display: flex; justify-content: center; flex-direction: column; align-items: center; border-radius: 20px; padding: 15px;">
-                            <span style="font-size: 20px; font-weight: bold;">Conoce más</span>
+                            <span style="font-size: 17px; font-weight: bold;">Conoce más</span>
                             <span style="font-size: 15px;">Opción Residencial</span>
                         </a>
                     </div>
@@ -1242,7 +1291,7 @@ background: url(https://assets.cdn.filesafe.space/ySliQyFXiBChjCSwZyR4/media/65e
             position: absolute;
             font-size: 20px;
             left: 30px;
-            top: 94%;" >Cotizar ahora</a>
+            top: 94%;">Cotizar ahora</a>
             </div>
         </div>
     </section>
@@ -1261,7 +1310,7 @@ background: url(https://assets.cdn.filesafe.space/ySliQyFXiBChjCSwZyR4/media/65e
             <br>
             <p class="title">Lo que nuestros clientes
                 dicen de nosotros</p>
-            <div class="container mt-5">
+            <div class="container">
                 <!-- Sección de encabezado -->
                 <div class="row">
                     <div class="col-lg-6 col-md-6 col-sm-6" style="padding: 20px; font-family: var(--lato);">
@@ -1294,7 +1343,7 @@ background: url(https://assets.cdn.filesafe.space/ySliQyFXiBChjCSwZyR4/media/65e
                         <!-- Página 1 con dos testimonios -->
                         <div class="carousel-item active">
                             <div class="row">
-                                <div class="col-md-6">
+                                <div class="col-md-5">
                                     <div class="testimonial-card">
                                         <h5>Jose Carlos Morillas</h5>
                                         <p class="text-muted">abr. 14, 2022</p>
@@ -1305,7 +1354,7 @@ background: url(https://assets.cdn.filesafe.space/ySliQyFXiBChjCSwZyR4/media/65e
                                         </p>
                                     </div>
                                 </div>
-                                <div class="col-md-6">
+                                <div class="col-md-5">
                                     <div class="testimonial-card">
                                         <h5>Luis Vergara</h5>
                                         <p class="text-muted">jun. 16, 2021</p>
@@ -1320,7 +1369,7 @@ background: url(https://assets.cdn.filesafe.space/ySliQyFXiBChjCSwZyR4/media/65e
                         <!-- Agregar más páginas con dos testimonios cada una -->
                         <div class="carousel-item">
                             <div class="row">
-                                <div class="col-md-6">
+                                <div class="col-md-5">
                                     <div class="testimonial-card">
                                         <h5>María López</h5>
                                         <p class="text-muted">sep. 22, 2023</p>
@@ -1329,7 +1378,7 @@ background: url(https://assets.cdn.filesafe.space/ySliQyFXiBChjCSwZyR4/media/65e
                                             post-venta, la energía solar ha sido una excelente inversión.</p>
                                     </div>
                                 </div>
-                                <div class="col-md-6">
+                                <div class="col-md-5">
                                     <div class="testimonial-card">
                                         <h5>Pedro Gómez</h5>
                                         <p class="text-muted">ene. 12, 2023</p>
@@ -1371,7 +1420,7 @@ background: url(https://assets.cdn.filesafe.space/ySliQyFXiBChjCSwZyR4/media/65e
         <div class="info-container" style="width: 100%;">
             <br>
             <br>
-            <p style="font-size: 40px;font-weight: 550;     text-align: center;">Preguntas Frecuentes</p>
+            <p style="font-size: 40px;font-weight: 550;     text-align: center; margin: 0px;">Preguntas Frecuentes</p>
             <div style="width: 100%;">
                 <div class="container mt-5" style="font-family: var(--lato); font-size: 18px;">
 
@@ -1555,9 +1604,9 @@ background: url(https://assets.cdn.filesafe.space/ySliQyFXiBChjCSwZyR4/media/65e
     </section>
 
 
-    <section
+    <div
         style=" color: white;height: 280px; width: 100%; position: relative;display: flex;flex-direction: column;justify-content: center;align-items: center;">
-        <img src="bg_darkmagenta.png" style="width: 100%; height: 100%;" alt="">
+        <img src="bg_darkmagenta.png" style="width: 100%; height: 100%;border-radius: 10px;" alt="">
         <div style="    text-align: center;
        display: flex;
        gap: 51px;
@@ -1579,7 +1628,7 @@ background: url(https://assets.cdn.filesafe.space/ySliQyFXiBChjCSwZyR4/media/65e
             </div>
 
         </div>
-    </section>
+    </div>
 
     <footer style=" position: relative; width: 100%; justify-content: center;display: flex;">
         <div style="max-width: 1170px;width: 100%; display: flex;align-items: center;flex-direction: column;">
