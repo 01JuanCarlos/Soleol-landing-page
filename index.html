@@ -266,7 +266,7 @@
     .background-section {
         background-attachment: fixed !important;
         background-position: 50% !important;
-        background-repeat: repeat !important;
+        background-repeat: no-repeat !important;
         background-size: cover !important;
         min-height: 79vh;
         background: url(bg2.png) no-repeat;
@@ -351,6 +351,11 @@
 
     /*--------------------------------------------------------*/
     @media (max-width: 768px) {
+        .background-section {
+            background-attachment: scroll !important;
+            /* Cambia a scroll o el valor que necesites */
+        }
+
         .feature-box {
             line-height: 26px !important;
             font-size: 15px !important;
@@ -476,7 +481,9 @@
         .text-banner-magenta span {
             font-size: 29px !important;
         }
-        .redes p, .contacto p{
+
+        .redes p,
+        .contacto p {
             margin: 0px;
         }
 
@@ -714,6 +721,24 @@
 
     .content-footer {
         padding: 20px;
+    }
+
+    .img-fixet {
+        background-attachment: fixed !important;
+        background-position: 50% !important;
+        background-repeat: no-repeat !important;
+        -webkit-background-size: cover !important;
+        background-size: cover !important;
+        min-height: 79vh;
+    }
+
+    .img-croll {
+
+        background-position: 50% !important;
+        background-repeat: no-repeat !important;
+        -webkit-background-size: cover !important;
+        background-size: cover !important;
+        min-height: 79vh;
     }
 </style>
 
@@ -987,13 +1012,8 @@
         </section>
     </section>
 
-    <div
-        style=" background-attachment: fixed !important;
-    background-position: 50% !important;
-    background-repeat: repeat !important;
-    -webkit-background-size: cover !important;
-    background-size: cover !important;
-    min-height: 79vh;
+    <div class="img-fixet  img-bg"
+        style=" 
             background: url(https://assets.cdn.filesafe.space/ySliQyFXiBChjCSwZyR4/media/65e8cf85a73c3c05680f0583.webp) no-repeat;">
     </div>
 
@@ -1188,14 +1208,9 @@
         </div>
     </section>
 
-    <div
+    <div class="img-fixet img-bg"
         style="
-         background-attachment: fixed !important;
-    background-position: 50% !important;
-    background-repeat: repeat !important;
-    -webkit-background-size: cover !important;
-    background-size: cover !important;
-    min-height: 79vh;
+         
     background: url(https://assets.cdn.filesafe.space/ySliQyFXiBChjCSwZyR4/media/65e8d586874b015f5331636c.webp) no-repeat;">
     </div>
 
@@ -1285,14 +1300,9 @@
         </div>
     </section>
 
-    <div style="
+    <div class="img-fixet img-bg" style="
     background: url(https://assets.cdn.filesafe.space/ySliQyFXiBChjCSwZyR4/media/65e8fadf8f162422a9890398.jpeg) no-repeat;
-    background-attachment: fixed !important;
-    background-position: 50% !important;
-    background-repeat: repeat !important;
-    -webkit-background-size: cover !important;
-    background-size: cover !important;
-    min-height: 79vh;">
+    ">
     </div>
 
 
@@ -1333,13 +1343,8 @@
         </div>
     </section>
 
-    <div
-        style=" background-attachment: fixed !important;
-        background-position: 50% !important;
-        background-repeat: repeat !important;
-        -webkit-background-size: cover !important;
-        background-size: cover !important;
-        min-height: 79vh;
+    <div class="img-fixet img-bg"
+        style=" 
 background: url(https://assets.cdn.filesafe.space/ySliQyFXiBChjCSwZyR4/media/65e8d18bbfbf2a22505ca785.webp) no-repeat;">
     </div>
 
@@ -1864,6 +1869,41 @@ background: url(https://assets.cdn.filesafe.space/ySliQyFXiBChjCSwZyR4/media/65e
                 modalShown = true;
             }
         });
+
+
+
+
+
+
+
+
+
+
+
+        function checkScreenSize() {
+            const imgBgElements = document.querySelectorAll('.img-bg');
+
+            imgBgElements.forEach((imgBgElement) => {
+                if (window.innerWidth <= 768) {
+                    // Eliminar clase .img-fixet y agregar .img-croll
+                    imgBgElement.classList.remove('img-fixet');
+                    imgBgElement.classList.add('img-croll');
+
+                } else {
+                    // Volver a agregar .img-fixet si la pantalla es mayor a 768px
+                    imgBgElement.classList.remove('img-croll');
+                    imgBgElement.classList.add('img-fixet');
+                }
+            });
+        }
+
+        // Ejecutar la función al cargar la página
+        checkScreenSize();
+
+        // Añadir un event listener para el redimensionamiento de la ventana
+        window.addEventListener('resize', checkScreenSize);
+
+
     </script>
 </body>
 
