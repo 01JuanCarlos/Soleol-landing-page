@@ -23,6 +23,12 @@
 
 </head>
 <style>
+    @supports (-webkit-touch-callout: none) {
+        div {
+            background-attachment: scroll !important;
+        }
+    }
+
     section {
         padding: 10px;
     }
@@ -345,16 +351,19 @@
 
     /*--------------------------------------------------------*/
     @media (max-width: 768px) {
-        .feature-box{
+        .feature-box {
             line-height: 26px !important;
             font-size: 15px !important;
         }
+
         .background-text {
-        font-size: 24px !important;
+            font-size: 24px !important;
         }
-        .boton-palpitante{
-            padding: 10px 10px !important;   
+
+        .boton-palpitante {
+            padding: 10px 10px !important;
         }
+
         .boton-flotante {
             font-size: 13px !important;
         }
@@ -446,21 +455,38 @@
         }
 
         .modal-content h2 {
+            margin-top: 23px !important;
             font-size: 30px !important;
+        }
+
+        form {
+            padding: 0px 6px !important;
         }
 
         .modal-body {
             padding: 10px !important;
         }
-        .text-banner-magenta{
+
+        .modal-body p {
+            margin-top: 20px;
         }
-        .text-banner-magenta span{
+
+        .text-banner-magenta {}
+
+        .text-banner-magenta span {
             font-size: 29px !important;
+        }
+        .redes p, .contacto p{
+            margin: 0px;
         }
 
     }
 
     @media (max-width:1015px) {
+        .dp {
+            align-items: center !important;
+        }
+
         .boton-flotante {
             width: 260px !important;
         }
@@ -960,12 +986,14 @@
             </div>
         </section>
     </section>
+
     <div
-        style="background-attachment: fixed !important;
-            background-position: 50% !important;
-            background-repeat: repeat !important;
-            background-size: cover !important;
-            min-height: 79vh;
+        style=" background-attachment: fixed !important;
+    background-position: 50% !important;
+    background-repeat: repeat !important;
+    -webkit-background-size: cover !important;
+    background-size: cover !important;
+    min-height: 79vh;
             background: url(https://assets.cdn.filesafe.space/ySliQyFXiBChjCSwZyR4/media/65e8cf85a73c3c05680f0583.webp) no-repeat;">
     </div>
 
@@ -1059,17 +1087,22 @@
                         <div class="swiper-container"
                             style="max-width: 100%; height: 500px; display: flex; justify-content: center;position: relative;">
                             <div class="swiper-wrapper" style="width: 100%; height: 100%;">
+
                                 <div class="swiper-slide">
-                                    <img src="https://images.leadconnectorhq.com/image/f_webp/q_80/r_1200/u_https://storage.googleapis.com/msgsndr/ySliQyFXiBChjCSwZyR4/media/669ea3ab8b33b0ebe5188be1.webp"
-                                        style="width: 100%; height: 100%; object-fit: cover;" alt="Imagen 1">
-                                </div>
-                                <div class="swiper-slide">
-                                    <img src="https://images.leadconnectorhq.com/image/f_webp/q_80/r_1200/u_https://storage.googleapis.com/msgsndr/ySliQyFXiBChjCSwZyR4/media/669ea3ab68c99f583e151d62.webp"
+                                    <img src="https://images.leadconnectorhq.com/image/f_webp/q_80/r_900/u_https://storage.googleapis.com/msgsndr/ySliQyFXiBChjCSwZyR4/media/669ea3ab54921de8dbeb3ba9.webp"
                                         style="width: 100%; height: 100%; object-fit: cover;" alt="Imagen 2">
                                 </div>
                                 <div class="swiper-slide">
-                                    <img src="https://images.leadconnectorhq.com/image/f_webp/q_80/r_480/u_https://storage.googleapis.com/msgsndr/ySliQyFXiBChjCSwZyR4/media/669ea3ab68c99f583e151d62.webp"
+                                    <img src="https://images.leadconnectorhq.com/image/f_webp/q_80/r_900/u_https://storage.googleapis.com/msgsndr/ySliQyFXiBChjCSwZyR4/media/669ea3ab68c99f583e151d62.webp"
                                         style="width: 100%; height: 100%; object-fit: cover;" alt="Imagen 3">
+                                </div>
+                                <div class="swiper-slide">
+                                    <img src="https://images.leadconnectorhq.com/image/f_webp/q_80/r_900/u_https://storage.googleapis.com/msgsndr/ySliQyFXiBChjCSwZyR4/media/669ea3ab54921d42deeb3baa.webp"
+                                        style="width: 100%; height: 100%; object-fit: cover;" alt="Imagen 3">
+                                </div>
+                                <div class="swiper-slide">
+                                    <img src="https://images.leadconnectorhq.com/image/f_webp/q_80/r_900/u_https://storage.googleapis.com/msgsndr/ySliQyFXiBChjCSwZyR4/media/669ea3ab8b33b0ebe5188be1.webp"
+                                        style="width: 100%; height: 100%; object-fit: cover;" alt="Imagen 1">
                                 </div>
                             </div>
                             <div class="swiper-pagination"></div>
@@ -1156,9 +1189,11 @@
     </section>
 
     <div
-        style="background-attachment: fixed !important;
+        style="
+         background-attachment: fixed !important;
     background-position: 50% !important;
     background-repeat: repeat !important;
+    -webkit-background-size: cover !important;
     background-size: cover !important;
     min-height: 79vh;
     background: url(https://assets.cdn.filesafe.space/ySliQyFXiBChjCSwZyR4/media/65e8d586874b015f5331636c.webp) no-repeat;">
@@ -1203,28 +1238,28 @@
                             <div class="swiper-wrapper" style="width: 100%; height: 100%;">
                                 <div class="swiper-slide">
                                     <img
-                                        src="https://images.leadconnectorhq.com/image/f_webp/q_80/r_900/u_https://storage.googleapis.com/msgsndr/ySliQyFXiBChjCSwZyR4/media/669ea4116aadd0538b5ec390.webp">
+                                        src="https://images.leadconnectorhq.com/image/f_webp/q_80/r_1200/u_https://storage.googleapis.com/msgsndr/ySliQyFXiBChjCSwZyR4/media/669ea4116aadd0538b5ec390.webp">
                                 </div>
                                 <div class="swiper-slide">
                                     <img
-                                        src="https://images.leadconnectorhq.com/image/f_webp/q_80/r_900/u_https://storage.googleapis.com/msgsndr/ySliQyFXiBChjCSwZyR4/media/669ea4a42477efff0b129646.webp">
+                                        src="https://images.leadconnectorhq.com/image/f_webp/q_80/r_768/u_https://storage.googleapis.com/msgsndr/ySliQyFXiBChjCSwZyR4/media/669ea411d1246ac40b85d585.webp">
                                 </div>
                                 <div class="swiper-slide">
                                     <img
-                                        src="https://images.leadconnectorhq.com/image/f_webp/q_80/r_900/u_https://storage.googleapis.com/msgsndr/ySliQyFXiBChjCSwZyR4/media/669ea4a45f256911263214e5.webp">
+                                        src="https://images.leadconnectorhq.com/image/f_webp/q_80/r_1200/u_https://storage.googleapis.com/msgsndr/ySliQyFXiBChjCSwZyR4/media/669ea41168c99f89ab151d86.webp">
                                 </div>
 
                                 <div class="swiper-slide">
                                     <img
-                                        src="https://images.leadconnectorhq.com/image/f_webp/q_80/r_900/u_https://storage.googleapis.com/msgsndr/ySliQyFXiBChjCSwZyR4/media/669ea4a45f256974db3214e6.webp">
+                                        src="https://images.leadconnectorhq.com/image/f_webp/q_80/r_1200/u_https://storage.googleapis.com/msgsndr/ySliQyFXiBChjCSwZyR4/media/669ea4a45f256974db3214e6.webp">
                                 </div>
                                 <div class="swiper-slide">
                                     <img
-                                        src="https://images.leadconnectorhq.com/image/f_webp/q_80/r_900/u_https://storage.googleapis.com/msgsndr/ySliQyFXiBChjCSwZyR4/media/669ea41168c99f89ab151d86.webp">
+                                        src="https://images.leadconnectorhq.com/image/f_webp/q_80/r_1200/u_https://storage.googleapis.com/msgsndr/ySliQyFXiBChjCSwZyR4/media/669ea4a45f256911263214e5.webp">
                                 </div>
                                 <div class="swiper-slide">
                                     <img
-                                        src="https://images.leadconnectorhq.com/image/f_webp/q_80/r_900/u_https://storage.googleapis.com/msgsndr/ySliQyFXiBChjCSwZyR4/media/669ea411d1246ac40b85d585.webp">
+                                        src="https://images.leadconnectorhq.com/image/f_webp/q_80/r_900/u_https://storage.googleapis.com/msgsndr/ySliQyFXiBChjCSwZyR4/media/669ea4a42477efff0b129646.webp">
                                 </div>
 
 
@@ -1250,13 +1285,14 @@
         </div>
     </section>
 
-    <div
-        style="background-attachment: fixed !important;
-background-position: 50% !important;
-background-repeat: repeat !important;
-background-size: cover !important;
-min-height: 79vh;
-background: url(https://assets.cdn.filesafe.space/ySliQyFXiBChjCSwZyR4/media/65e8fadf8f162422a9890398.jpeg) no-repeat;">
+    <div style="
+    background: url(https://assets.cdn.filesafe.space/ySliQyFXiBChjCSwZyR4/media/65e8fadf8f162422a9890398.jpeg) no-repeat;
+    background-attachment: fixed !important;
+    background-position: 50% !important;
+    background-repeat: repeat !important;
+    -webkit-background-size: cover !important;
+    background-size: cover !important;
+    min-height: 79vh;">
     </div>
 
 
@@ -1298,11 +1334,12 @@ background: url(https://assets.cdn.filesafe.space/ySliQyFXiBChjCSwZyR4/media/65e
     </section>
 
     <div
-        style="background-attachment: fixed !important;
-background-position: 50% !important;
-background-repeat: repeat !important;
-background-size: cover !important;
-min-height: 79vh;
+        style=" background-attachment: fixed !important;
+        background-position: 50% !important;
+        background-repeat: repeat !important;
+        -webkit-background-size: cover !important;
+        background-size: cover !important;
+        min-height: 79vh;
 background: url(https://assets.cdn.filesafe.space/ySliQyFXiBChjCSwZyR4/media/65e8d18bbfbf2a22505ca785.webp) no-repeat;">
     </div>
 
